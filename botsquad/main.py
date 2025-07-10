@@ -1,10 +1,5 @@
 from fastapi import FastAPI
-from botsquad.api.routes import router  # make sure this file exists
+from botsquad.api.routes import router
 
-app = FastAPI()  # ✅ This is what Uvicorn needs to find
-
+app = FastAPI()
 app.include_router(router)
-
-@app.get("/")
-def root():
-    return {"message": "BotSquad backend is running!"}
