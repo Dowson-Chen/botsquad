@@ -1,0 +1,19 @@
+# Python cache and artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.log
+
+# Env & secrets
+.env
+
+# Poetry
+poetry.lock
+
+# PyCharm project files
+.idea/
+
+# Virtual environments (just in case)
+.venv/
+env/
+venv/
